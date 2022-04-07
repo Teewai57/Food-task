@@ -8,7 +8,7 @@
     background-size: cover;
     background-blend-mode: darken;
     background-color: rgba(0,0,0,0.1);
-    /* height: 700px; */
+    height: 650px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     /* width: 100%; */
 }
@@ -26,7 +26,7 @@ a{
     padding-left: 15px;
     color: rgb(131, 129, 129);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: bold;
+    /* font-weight: bold; */
     
 }
 a:hover{
@@ -68,13 +68,27 @@ font-family: Arial, Helvetica, sans-serif;
 font-weight: bold;
 }
 /* .btn-color:hover{
-    color: gainsboro; 
+    color: gainsboro; her
 } */
 .button_p{
     position: relative;
     top: 10px;
     color: rgb(131, 129, 129);
     font-size: 17px;
+}
+.form-control{
+    width: 300px;
+    text-align: center;
+    background-color: gainsboro;
+    color: rgba(240, 40, 4, 0.705);
+    /* padding: 16px 24px 16px 24px !important; */
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 16px;
+    padding-right: 16px !important;
+}
+.form-group{
+    
 }
 .firstimage{
     width: 50%;
@@ -296,6 +310,12 @@ video{
     }
     .play_icon{
         font-size: 30px;
+    }
+    .play{
+        box-shadow: none !important;
+    }
+    .play:focus{
+        box-shadow: none !important;
     }
     .herotext{
         font-size: 30px;
