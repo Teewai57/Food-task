@@ -126,14 +126,6 @@
             <img src="/images/dish4.jpg" alt="" class="dish4">
           </div>
         </div>
-        <!-- <div class="col-md-3">
-          <img src="/images/dish1.jpg" alt="" class="dish1">
-          <img src="/images/dish2.jpg" alt="" class="dish2">
-        </div>
-        <div class="col-md-3">
-          <img src="/images/dish3.jpg" alt="" class="dish3">
-          <img src="/images/dish4.jpg" alt="" class="dish4">
-        </div> -->
       </div>
     </div>
 
@@ -153,19 +145,30 @@
       <div class="row justify-content-md-center">
         <p class="pt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit expedita neque . </p>
       </div>
-      <div class="row pt-3 pb-3">
-        <div class="col-md-4">
-          <div class="card">
-            <img src="/images/pexels-daria-shevtsova-704569.jpg" class="card-img">
-            <div class="cardblock pl-3">
-              <h3 class="class-title pt-3">Kilos delicacy <span>$10.30</span> </h3>
 
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Doloribus distinctio.</p>
+
+
+    <div id="create">
+        <div class="d-flex flex-wrap">
+          <div v-for="(content, index) in cardContent">
+            <div class="card-style" >
+              <div class="card">
+                <img v-bind:src="content.img" class="card-img">
+                <div class="cardblock card-body">
+                  <h4 class="card-title class-title pt-3"> {{content.title}} <span> {{content.price}} </span> </h4>
+                  <p class="card-text"> {{content.text}} </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+    </div>
+
+  </div>
+
+
+
+      <!-- <div class="col-md-4">
           <div class="card">
             <img src="/images/pexels-pixabay-161573.jpg" class="card-img">
             <div class="cardblock pl-3">
@@ -185,7 +188,7 @@
             </div>
           </div>
         </div>
-      </div>
+      
       <div class="row pt-5">
         <div class="col-md-4">
           <div class="card">
@@ -218,7 +221,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
 
 
 
@@ -227,7 +230,7 @@
           place an order
         </button>
       </div>
-      <div class="container pt-5">
+      <div class="container pt-5 shadow">
         <div class="row justify-content-center">
           <h1>Our Popular Recipies</h1>
         </div>
@@ -237,42 +240,7 @@
     </div>
   </section>
 
-  <!-- SECTION4 -->
 
-  <section id="order">
-    <div class="container-fluid">
-
-      <div class="row pt-4 pb-3">
-        <div class="col-md-3 colimg">
-          <img src="/images/pexels2.jpg  " alt="">
-          <div class="visibility_hidden visibility_text">
-            <p>Lorem ipsum, dolor sit amet <br> consectetur Lorem, ipsum dolor..</p>
-            <button class="btn btn-color2">Order</button>
-          </div>
-
-        </div>
-        <div class="col-md-3 colimg">
-          <img src="/images/food5.jpg " alt="">
-          <div class="visibility_hidden">
-            <p>Lorem ipsum, dolor sit amet <br> consectetur Lorem, ipsum dolor..</p>
-            <button class="btn btn-color2">Order</button>
-          </div>
-        </div>
-        <div class="col-md-3 colimg">
-          <img src="/images/food1.jpg " alt="">
-          <div class="visibility_hidden">
-            <p>Lorem ipsum, dolor sit amet <br> consectetur Lorem, ipsum dolor..</p>
-            <button class="btn btn-color2">Order</button>
-          </div>
-        </div>
-        <div class="col-md-3 colimg">
-          <img src="/images/food6.jpg " alt="">
-          <div class="visibility_hidden">
-            <p>Lorem ipsum, dolor sit amet <br> consectetur Lorem, ipsum dolor..</p>
-            <button class="btn btn-color2">Order</button>
-          </div>
-        </div>
-      </div>
       <div id="updates" class="shadow p-5">
         <div class="row justify-content-center pt-5">
           <div>
@@ -281,15 +249,15 @@
         </div>
         <div class="row justify-content-center pt-3" id="text">
           <h5>count is {{count}} </h5>
-          
+
         </div>
         <div class="row justify-content-center pt-3">
           <button class="btn btn-danger mr-4 alert" id="decrease">-</button>
           <button class="btn btn-success alert" id="increase">+</button>
         </div>
         <div class="row pt-5 pb-5 justify-content-center">
-           <button class="btn hero4_btn pl-5 pr-5 pt-3 pb-3">
-            newest delicacies and more 
+          <button class="btn hero4_btn pl-5 pr-5 pt-3 pb-3">
+            newest delicacies and more
           </button>
           <button class="btn  hero4_btn2 ">
             {{subscribeText}}
@@ -327,6 +295,8 @@
       </div>
     </div>
   </section>
+
+
 
   <!-- MAIN SECTION ENDS HERE -->
   <script src="https://unpkg.com/vue@3"></script>

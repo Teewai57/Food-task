@@ -365,3 +365,9 @@ video{
    } */
 
 }
+
+.card-style{
+    width: 350px;
+    height: unset;
+    margin: 0 5px;
+}
